@@ -1,4 +1,4 @@
-package Execises.Factory;
+package Execises.FactoryAndAbstractFactory;
 
 public class Main {
     public static void main(String[] args) {

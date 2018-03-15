@@ -1,4 +1,4 @@
-package Execises.Factory;
+package Execises.FactoryAndAbstractFactory;
 
 public class Archer extends InfantryUnit {
 
