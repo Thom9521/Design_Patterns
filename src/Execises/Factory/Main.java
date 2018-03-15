@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
 
         Archer archer1 = new Archer(30, 5, 100, 15);
-        CrossbowMan crossbowMan1 = new CrossbowMan(25, 2, 100, 15);
+        CrossbowMan crossbowMan1 = new CrossbowMan(25, 2, 100, 17);
         Musketeer musketeer1 = new Musketeer(5, 0, 100, 30);
         RockHauler rockHauler1 = new RockHauler(5, 0, 100, 50);
         SpearThrower spearThrower1 = new SpearThrower(20, 0, 100, 15);

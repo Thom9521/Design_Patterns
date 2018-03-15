@@ -1,4 +1,4 @@
-package Prototype;
+package Patterns.Prototype;
 
 public abstract class Shape implements Cloneable {
 

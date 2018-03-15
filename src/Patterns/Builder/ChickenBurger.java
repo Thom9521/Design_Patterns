@@ -1,4 +1,4 @@
-package Builder;
+package Patterns.Builder;
 
 public class ChickenBurger extends Burger {
 

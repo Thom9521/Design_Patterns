@@ -1,4 +1,4 @@
-package Singleton;
+package Patterns.Singleton;
 
 public class SingleObject {
 

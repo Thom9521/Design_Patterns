@@ -1,4 +1,4 @@
-package Iterator;
+package Patterns.Iterator;
 
 public class NameRepository implements Container {
     public String names[] = {"Michael", "Lisa", "Niels", "Thomas"};

@@ -1,4 +1,4 @@
-package Prototype;
+package Patterns.Prototype;
 
 public class Square extends Shape {
 

@@ -1,4 +1,4 @@
-package Iterator;
+package Patterns.Iterator;
 
 public class IteratorPatternDemo {
     public static void main(String[] args) {

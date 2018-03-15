@@ -1,4 +1,4 @@
-package Prototype;
+package Patterns.Prototype;
 
 public class PrototypePatternDemo {
     public static void main(String[] args) {

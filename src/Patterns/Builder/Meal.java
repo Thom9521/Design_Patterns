@@ -1,4 +1,4 @@
-package Builder;
+package Patterns.Builder;
 
 import java.util.ArrayList;
 import java.util.List;
