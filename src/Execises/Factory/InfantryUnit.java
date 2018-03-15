@@ -22,14 +22,16 @@ public class InfantryUnit {
         int reduction = (int) (Math.random()*armor);
         if (damage > reduction){
             hp = hp - (damage - reduction);
+            System.out.println();
         }
     }
 
     public void attack(InfantryUnit unit){
         int attackDamage = (int) (Math.random()*damage)+1;
         unit.takeDamage(attackDamage);
-        System.out.println(unit.name + " skadede " + attackDamage +
-                " damage. Remaining: " + unit.hp);
+        System.out.println(unit.name + " tog " + attackDamage +
+                " damage ind af fjenden. Liv tilbage: " + unit.hp);
+
     }
 
     public int getRange() {

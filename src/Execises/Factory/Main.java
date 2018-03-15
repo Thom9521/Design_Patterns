@@ -9,11 +9,11 @@ public class Main {
         RockHauler rockHauler1 = new RockHauler(5, 0, 100, 50);
         SpearThrower spearThrower1 = new SpearThrower(20, 0, 100, 15);
 
-        archer1.setName("Acher1");
-        crossbowMan1.setName("Crossbowman1");
+        archer1.setName("Zelda");
+        crossbowMan1.setName("Twitch");
 
-        archer1.attack(crossbowMan1);
-        crossbowMan1.takeDamage(20);
+        crossbowMan1.attack(archer1);
+
 
 
     }
