@@ -34,6 +34,14 @@ public class InfantryUnit {
 
     }
 
+    public boolean alive(){
+        boolean alive = true;
+        if (hp < 0) {
+            alive = false;
+        }
+        return alive;
+    }
+
     public int getRange() {
         return range;
     }
