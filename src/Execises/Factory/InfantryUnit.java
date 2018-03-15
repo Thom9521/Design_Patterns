@@ -2,17 +2,18 @@ package Execises.Factory;
 
 public class InfantryUnit {
 
+    private String name;
     private int range;
     private int armor;
-    private int hits;
+    private int hp;
     private int damage;
 
     public InfantryUnit(){}
 
-    public InfantryUnit(int range, int armor, int hits, int damage) {
+    public InfantryUnit(int range, int armor, int hp, int damage) {
         this.range = range;
         this.armor = armor;
-        this.hits = hits;
+        this.hp = hp;
         this.damage = damage;
 
     }
@@ -20,13 +21,15 @@ public class InfantryUnit {
     public void takeDamage(int damage){
         int reduction = (int) (Math.random()*armor);
         if (damage > reduction){
-            hits = hits - (damage - reduction);
+            hp = hp - (damage - reduction);
         }
     }
 
     public void attack(InfantryUnit unit){
         int attackDamage = (int) (Math.random()*damage)+1;
         unit.takeDamage(attackDamage);
+        System.out.println(unit.name + " skadede " + attackDamage +
+                " damage. Remaining: " + unit.hp);
     }
 
     public int getRange() {
@@ -45,12 +48,12 @@ public class InfantryUnit {
         this.armor = armor;
     }
 
-    public int getHits() {
-        return hits;
+    public int getHp() {
+        return hp;
     }
 
-    public void setHits(int hits) {
-        this.hits = hits;
+    public void setHp(int hp) {
+        this.hp = hp;
     }
 
     public int getDamage() {
@@ -59,5 +62,13 @@ public class InfantryUnit {
 
     public void setDamage(int damage) {
         this.damage = damage;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
