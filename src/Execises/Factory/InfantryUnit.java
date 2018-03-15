@@ -2,11 +2,13 @@ package Execises.Factory;
 
 public class InfantryUnit {
 
-    private String name;
+
     private int range;
     private int armor;
     private int hp;
     private int damage;
+    private String name;
+    private String race;
 
     public InfantryUnit(){}
 
@@ -81,5 +83,13 @@ public class InfantryUnit {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getRace() {
+        return race;
+    }
+
+    public void setRace(String race) {
+        this.race = race;
     }
 }

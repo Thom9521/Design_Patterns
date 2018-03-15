@@ -19,13 +19,34 @@ public class Main {
 
         if (!archer1.alive()){
             System.out.println("\n"+archer1.getName() + " blev nakket af " + crossbowMan1.getName() + "! \n" +
-            crossbowMan1.getName() + " har " + crossbowMan1.getHp() + " hp tilbage.");
+            crossbowMan1.getName() + " har vundet dødskampen med " + crossbowMan1.getHp() + " hp tilbage.");
         }
         if (!crossbowMan1.alive()){
             System.out.println("\n"+crossbowMan1.getName() + " blev nakket af " + archer1.getName() + "! \n" +
-            archer1.getName() + " har " + archer1.getHp() + " hp tilabge.");
+            archer1.getName() + " har vundet dødskampen med " + archer1.getHp() + " hp tilabge.");
         }
 
+        //Racer
+        InfantryFactory humanFactory = new FactoryFactory().createInfantryFactory(1); //Human race
+        InfantryFactory orcFactory = new FactoryFactory().createInfantryFactory(2); //Orc race
 
+        InfantryUnit archer2 = humanFactory.createUnit(1); //1 = archer
+        archer2.setName("Torben");
+        InfantryUnit warrior = orcFactory.createUnit(1); // 1 = warrior
+        warrior.setName("Thrall");
+
+        while(archer2.alive() && warrior.alive()) {
+            warrior.attack(archer2);
+            archer2.attack(warrior);
+        }
+
+        if (!archer2.alive()){
+            System.out.println("\n"+archer2.getName() + " blev nakket af " + warrior.getName() + "! \n" +
+                    warrior.getName() + " har vundet dødskampen med " + warrior.getHp() + " hp tilbage.");
+        }
+        if (!warrior.alive()){
+            System.out.println("\n"+warrior.getName() + " blev nakket af " + archer2.getName() + "! \n" +
+                    archer2.getName() + " har vundet dødskampen med " + archer2.getHp() + " hp tilabge.");
+        }
     }
 }
