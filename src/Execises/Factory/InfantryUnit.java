@@ -23,7 +23,9 @@ public class InfantryUnit {
         if (damage > reduction){
             hp = hp - (damage - reduction);
             System.out.println();
+            System.out.println("Armor tog " + reduction + " damage.");
         }
+        else System.out.println("Armor parrerede alt damage");
     }
 
     public void attack(InfantryUnit unit){
@@ -31,7 +33,6 @@ public class InfantryUnit {
         unit.takeDamage(attackDamage);
         System.out.println(unit.name + " tog " + attackDamage +
                 " damage ind af fjenden. Liv tilbage: " + unit.hp);
-
     }
 
     public boolean alive(){

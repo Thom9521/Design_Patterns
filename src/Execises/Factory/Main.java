@@ -18,11 +18,11 @@ public class Main {
         }
 
         if (!archer1.alive()){
-            System.out.println(archer1.getName() + " blev nakket af " + crossbowMan1.getName() + "! \n" +
+            System.out.println("\n"+archer1.getName() + " blev nakket af " + crossbowMan1.getName() + "! \n" +
             crossbowMan1.getName() + " har " + crossbowMan1.getHp() + " hp tilbage.");
         }
         if (!crossbowMan1.alive()){
-            System.out.println(crossbowMan1.getName() + " blev nakket af " + archer1.getName() + " ! \n" +
+            System.out.println("\n"+crossbowMan1.getName() + " blev nakket af " + archer1.getName() + "! \n" +
             archer1.getName() + " har " + archer1.getHp() + " hp tilabge.");
         }
 
